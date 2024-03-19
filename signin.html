@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gold Shop</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="https://db.onlinewebfonts.com/c/9455cdcc213da1287d98f3c2cff4c4fa?family=Navbar" rel="stylesheet">
+  <style>
+    /* Add your custom styles here */
+
+   body{
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+   }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    body {
+      background-color: #f8f9fa;
+    }
+    .jumbotron {
+      background-color: #ffc107;
+      color: #ffffff;
+    }
+    footer {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+    .social-icons {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+    i{
+        display: inline-block;
+    }
+    #img1{
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+    a{
+      font-family: "Navbar";
+      font-weight: bold;
+      color: white;
+    }
+    .upperdiv{
+            
+            top: 40px;
+            border: 2px solid black;
+            width: 30%;
+            background-color: black;
+            color: white;
+            margin: auto;
+            
+            height: 640px;
+            
+        }
+        input, select {
+            width: 200px;
+            height: 25px;
+            margin: 2px;
+           border-radius: 5px;
+
+        }
+        a{
+      font-family: "Navbar";
+      font-weight: bold;
+      color: white;
+    }
+    iframe{
+        border-radius: 5px;
+    }
+    #top{
+      background-image: url(/women-3118387_1280.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 50;
+    
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 0 !important;">
+        <a class="navbar-brand" href="#"><img src="icon1.jpg"id="img1"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signin.html" style="color: white;">Signin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div id="top">
+  <div class="container" style="margin-top: 0 !important;">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Signup</h2>
+                    <form>
+                        <div class="form-group">
+                            
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
+                        </div>
+                        <div class="form-group">
+                            
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                        </div>
+                        <div class="form-group">
+                            
+                            <textarea class="form-control" id="address" placeholder="Enter address" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            
+                            <input type="tel" class="form-control" id="mobileNumber" placeholder="Enter mobile number" required>
+                        </div>
+                        <div class="form-group">
+                            
+                            <select class="form-control" id="gender" required>
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="birthDate">Birth Date:</label>
+                            <input type="date" class="form-control" id="birthDate" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary mr-2">Signup</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer class="footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Quick Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">Products</a></li>
+                    <li><a href="#" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">About Us</a></li>
+                    <li><a href="#" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Company Address</h4>
+                <p>123 Main Street<br>City, State ZIP<br>Country</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Location</h4>
+                <!-- Replace with your Google Maps iframe code -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.036268228056!2d-74.00611148467678!3d40.71277658390349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25943309dd4c5%3A0x630b9d31f7f0cb6!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1648434671709!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12 d-flex justify-content-center">
+                <div class="social-icons">
+                    <a href="#"><img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"></a>
+                    <a href="#"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
